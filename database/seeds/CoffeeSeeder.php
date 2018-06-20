@@ -44,6 +44,10 @@ class CoffeeSeeder extends Seeder
 	    [
 		'name' => 'Capuccino',
 		'price' => '3.00'
+	    ],
+	    [
+		'name' => 'Coffee with Bayleys',
+		'price' => '3.50'
 	    ]
 	];
     }
