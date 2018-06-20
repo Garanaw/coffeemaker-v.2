@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('notes', 'NotesController@index');
+Route::get('coffee', 'CoffeeController@index');
 Route::get('notes/{note}', 'NotesController@show')->where('note', '[0-9]+');
