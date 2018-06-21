@@ -21,6 +21,8 @@ class CreateOrdersTable extends Migration {
 
 	    $table->integer('milk')->unsigned();
 	    $table->integer('sugar')->unsigned();
+	    
+	    $table->timestamps();
 	});
     }
 
