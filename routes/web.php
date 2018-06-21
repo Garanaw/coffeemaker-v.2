@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('coffee', 'CoffeeController@index');
-Route::get('notes/{note}', 'NotesController@show')->where('note', '[0-9]+');
+Route::post('coffee', 'CoffeeController@summary');
+Route::get('coffee/processOrder', 'CoffeeController@store');
