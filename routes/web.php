@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('coffee', 'CoffeeController@index');
 Route::post('coffee', 'CoffeeController@summary');
-Route::get('coffee/processOrder', 'CoffeeController@store');
+Route::post('coffee/processOrder', 'CoffeeController@store');
