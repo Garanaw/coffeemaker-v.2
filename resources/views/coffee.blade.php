@@ -5,8 +5,8 @@
 @section('content')
 
 <div class="container-fluid">
-    <form method="post" action="{{ url('coffee/summary') }}" class="row" id="coffeeorder">
-        
+    <form method="post" action="{{ url('coffee') }}" class="row" id="coffeeorder">
+        {!! csrf_field() !!}
         <div class="col-md-4">
             <div class="form-group">
                 <label for="coffee">Choose a coffee</label>
@@ -26,8 +26,6 @@
                     <input type="checkbox" name="milk" value="1">
                     Want to add extra milk?
                 </label>
-                
-                
             </div>
         </div>
         
